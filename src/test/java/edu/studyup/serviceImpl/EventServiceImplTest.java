@@ -23,7 +23,7 @@ import edu.studyup.util.StudyUpException;
 class EventServiceImplTest {
 	
 	//Because Spotbug says so
-	//EventServiceImpl eventServiceImpl;
+	EventServiceImpl eventServiceImpl;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
