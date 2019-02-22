@@ -40,10 +40,8 @@ public class Lookup {
 	private static JSONArray queryURL(String query) {
 		JSONArray results = new JSONArray();
 		try {
-			//Fixed spot
-			String urlString = "https://nominatim.openstreetmap.org/search?q=" + new OutputStreamWriter(query, "UTF-8")
-					+ "&format=json";			
-			//URLEncoder.encode(query, "UTF-8") + "&format=json";
+			String urlString = "https://nominatim.openstreetmap.org/search?q=" + URLEncoder.encode(query, "UTF-8")
+					+ "&format=json";
 			URL url = new URL(urlString);
 			try (BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()))) {
 				StringBuilder sb = new StringBuilder();

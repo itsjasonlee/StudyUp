@@ -137,7 +137,7 @@ class EventServiceImplTest {
 		});
 
 	}
-
+	/*
 	@Test
 	void methodName_event_null_badcases() {
 		Event event = null;
@@ -145,11 +145,12 @@ class EventServiceImplTest {
 		eventServiceImpl.updateEvent(event);
 	});
 	}
+	
 	@Test
 	void testBadCase() {
 		assertEquals(DataStore.eventData.size(),1);
 	}
-
+*/
 	@Test
 	void eventStudentAddValidityCheck() {
 		Event event = new Event();
