@@ -22,7 +22,7 @@ import edu.studyup.util.StudyUpException;
 
 class EventServiceImplTest {
 	
-	//Because Spotbug says so
+	//NOT A BUG SPOT BUG
 	EventServiceImpl eventServiceImpl;
 
 	@BeforeAll
